@@ -306,9 +306,9 @@ abstract class AbstractPorticoRequest extends AbstractRequest
         $additionalTxnFields->appendChild($xml->createElement('hps:Description', $this->getDescription()));
         $additionalTxnFields->appendChild($xml->createElement('hps:InvoiceNbr', $this->getTransactionId()));
 
-        if ($this->getCustomerReference() !== null) {
-            $additionalTxnFields->appendChild($xml->createElement('hps:CustomerID', $this->getCustomerReference()));
-        }
+//        if ($this->getCustomerReference() !== null) {
+//            $additionalTxnFields->appendChild($xml->createElement('hps:CustomerID', $this->getCustomerReference()));
+//        }
 
         return $additionalTxnFields;
     }
